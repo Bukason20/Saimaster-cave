@@ -2,18 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  overflow-x: hidden;
+}
 header{
   @apply py-6 px-6 md:px-12 min-h-[100vh]
 }
 section{
   @apply py-10 px-6 md:px-12 
 }
-.card{
-  @apply text-center bg-[rgb(249,215,101)] shadow-md px-2 py-3 md:py-5 md:px-3  rounded text-[0.7rem] md:text-base
+section h3{
+  position: relative;
+  padding-left: 2.2rem;
+  color: rgb(249,215,101);
+  font-weight: 700;
 }
 
-/* -------------------------------------------------------------------------MENU SECTION------------------------------------------------------------------- */
-.menu-section h3::before{
+section h3::before{
   content: "";
   width: 2rem;
   height: 0.5rem;
@@ -23,12 +28,12 @@ section{
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  /* margin-right: 20rem; */
 }
-.menu-section h3{
-  /* background-color: red; */
-  position: relative;
-  padding-left: 2.2rem;
-  color: rgb(249,215,101);
-  font-weight: 700;
+.card{
+  @apply text-center bg-[rgb(249,215,101)] shadow-md px-2 py-3 md:py-5 md:px-3  rounded text-[0.7rem] md:text-base
 }
+
+/* -------------------------------------------------------------------------MENU SECTION------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------------------ABOUT SECTION---------------------------------------------------------------------------- */
