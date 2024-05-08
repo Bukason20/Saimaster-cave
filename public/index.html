@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body class="font-mono">
     <header class="relative">
@@ -27,14 +28,18 @@
              <button class="bg-[rgb(249,215,101)] py-2 px-5 rounded-full cursor-pointer font-semibold">Order Now</button>
              
         </nav>
-        <div class="hero-cont flex py-6 flex-col md:flex-row justify-between items-center mt-8 gap-4 relative">
-            <div class="hero-content mb-4 md:mb-0">
-                <h1 class="text-5xl text-center md:text-left font-semibold mb-4 overflow-hidden">Satisfy Your Cravings</h1>
+        <div class="hero-cont flex py-6 flex-col md:flex-row justify-between items-center mt-8 gap-4 relative overflow-visible">
+            <div class="hero-content mb-4 md:mb-0 overflow-visible">
+                <h1 class="text-5xl text-center md:text-left font-semibold overflow-hidden pb-4">Satisfy Your Cravings</h1>
                 <p class="text-center md:text-left">We provide the tastiest and most affordable sharwamas made of quality, beef and chicken.</p>
-                <div class="hero-btns mt-4 w-fit mx-auto md:mx-2">
-                    <button class="bg-[rgb(249,215,101)] py-2 px-5 rounded-md cursor-pointer font-semibold">Order Now</button>
-                    <button class="bg-[rgb(249,215,101)] py-2 px-5 rounded-md cursor-pointer font-semibold">See Menu</button>
+                <div class="relative overflow-visible">
+                    <div class="hero-btns mt-4 w-fit mx-auto md:mx-2">
+                        <button class="bg-[rgb(249,215,101)] py-2 px-5 rounded-md cursor-pointer font-semibold">Order Now</button>
+                        <button class="bg-[rgb(249,215,101)] py-2 px-5 rounded-md cursor-pointer font-semibold">See Menu</button>
+                    </div>
+                    <img src="./images/Finger.png" alt="">
                 </div>
+                
                 
                 <div class="hero-cards flex gap-2 md:gap-4 mt-10 md:mt-16">
                     <div class="card text-[0.7rem]">
@@ -64,47 +69,59 @@
             
         </div>
 
-        <img src="./images/Finger.png" alt="" class="absolute h-32 top-[30.5%] left-[-9%] md:top-[45.5%] md:left-[-4%]">
+        
     </header>
 
     <main>
 
         <!-- -----------------------------------MENU SECTION--------------------------------------- -->
         <section class="menu-section">
-            <h3>OUR MENU</h3>
+            <h3 class="bg-purple-600">OUR MENU</h3>
             <h1 class="text-3xl font-bold">Explore our Dishes</h1>
             
-            <div class="menus grid grid-flow-row md:grid-flow-col gap-4 mt-8">
-                <div class="menu shadow-gray-300 shadow-lg h-fit p-4 w-fit">
-                    <img src="images/sharwama1.jpg" alt="" class="w-[22rem] rounded-full aspect-square object-cover mx-auto mb-3">
-                    <h2 class="font-bold text-xl before:content-['']">Chicken Shawarma</h2>
-
-                    <div class="price flex justify-between items-center">
-                        <p>N200</p>
-                        <button class="bg-[rgb(249,215,101)] py-2 px-5 rounded-full cursor-pointer font-semibold">Order Now</button>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/sharwama1.jpg" alt="" class="w-[22rem] rounded-full aspect-square object-cover mx-auto mb-3">
+                        <h2 class="font-bold text-xl before:content-['']">Chicken1 Shawarma</h2>
+    
+                        <div class="price flex justify-between items-center">
+                            <p>N200</p>
+                            <button class="bg-[rgb(249,215,101)] py-2 px-5 rounded-full cursor-pointer font-semibold">Order Now</button>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <img src="images/sharwama2.jpg" alt="" class="w-[22rem] rounded-full aspect-square object-cover mx-auto mb-3">
+                        <h2 class="font-bold text-xl">Chicken2 Shawarma</h2>
+    
+                        <div class="price flex justify-between items-center">
+                            <p>N200</p>
+                            <button class="bg-[rgb(249,215,101)] py-2 px-5 rounded-full cursor-pointer font-semibold">Order Now</button>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <img src="images/burger1.jpg" alt="" class="w-[22rem] rounded-full aspect-square object-cover mx-auto mb-3">
+                        <h2 class="font-bold text-xl">Chicken3 Shawarma</h2>
+    
+                        <div class="price flex justify-between items-center">
+                            <p>N200</p>
+                            <button class="bg-[rgb(249,215,101)] py-2 px-5 rounded-full cursor-pointer font-semibold">Order Now</button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="menu shadow-gray-300 shadow-lg h-fit p-4 w-fit">
-                    <img src="images/sharwama2.jpg" alt="" class="w-[22rem] rounded-full aspect-square object-cover mx-auto mb-3">
-                    <h2 class="font-bold text-xl">Chicken Shawarma</h2>
+                <div class="swiper-pagination"></div>
 
-                    <div class="price flex justify-between items-center">
-                        <p>N200</p>
-                        <button class="bg-[rgb(249,215,101)] py-2 px-5 rounded-full cursor-pointer font-semibold">Order Now</button>
-                    </div>
-                </div>
-
-                <div class="menu shadow-gray-300 shadow-lg h-fit p-4 w-fit">
-                    <img src="images/burger1.jpg" alt="" class="w-[22rem] rounded-full aspect-square object-cover mx-auto mb-3">
-                    <h2 class="font-bold text-xl">Chicken Shawarma</h2>
-
-                    <div class="price flex justify-between items-center">
-                        <p>N200</p>
-                        <button class="bg-[rgb(249,215,101)] py-2 px-5 rounded-full cursor-pointer font-semibold">Order Now</button>
-                    </div>
-                </div>
+                <!-- If we need navigation buttons -->
+                <!-- <div class="bg-slate-600 absolute top-0 left-1"> -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>      
+                <!-- </div> -->
+                
             </div>
+            
         </section>
 
         <!-- -----------------------------------------------------------------ABOUT SECTION------------------------------------------------------ -->
@@ -126,8 +143,50 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="bg-[rgb(230,197,87)] h-[50vh] flex flex-col md:flex-row justify-between">
+        <div class="w-[40%]">
+            <h2>Saimaster Cave</h2>
+            <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, eos magnam! Sed odio, earum quam tenetur delectus ipsa quibusdam? Autem laudantium error ipsum nemo nostrum.</p>
+            <p>Follow us on</p>
+        </div> 
 
+        <div class="flex w-[40%] justify-between">
+            <div class="footerContact">
+                <h2>Get in Touch</h2>
+                <p>Phone : 090343</p>
+                <p>Address: sdsd</p>
+                <p>Mail</p>
+            </div>
+            <div class="footerLinks">
+                <h2>Links</h2>
+                <p>Home</p>
+                <p>Menu</p>
+                <p>About</p>
+                <p>Testimonials</p>
+                <p>Blog</p>
+            </div>
+        </div>
     </footer>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    // observer:true,
+    // observeParents: true,
+    // parallax:true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    // centeredSlides: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
 </html>
+
+

@@ -8,7 +8,7 @@
 header{
   @apply py-6 px-6 md:px-12 min-h-[100vh]
 }
-section{
+section, footer{
   @apply py-10 px-6 md:px-12 
 }
 section h3{
@@ -32,8 +32,73 @@ section h3::before{
 .card{
   @apply text-center bg-[rgb(249,215,101)] shadow-md px-2 py-3 md:py-5 md:px-3  rounded text-[0.7rem] md:text-base
 }
+.hero-content img{
+  @apply h-10 absolute top-[9%] left-[-13.5%];
+  
+  animation: appear 1s ease-in-out forwards, click 1s ease 1.5s infinite;
+  /* animation: ;  */
+}
+@keyframes appear {
+  0%{
+    top: 9%;
+    left: -35%;
+  }
+  100%{
+    top: 9%;
+    left: -13.5%;
+    animation: click 1s ease 1.5s infinite;
+  }
+}
+
+@keyframes click{
+  0%{
+    left: -15%;
+  }
+  100%{
+    left: -13.5%;
+  }
+}
+
 
 /* -------------------------------------------------------------------------MENU SECTION------------------------------------------------------------------- */
-
+.swiper{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  overflow: visible;
+}
+.swiper-wrapper{
+  /* background-color: blue; */
+  width: 300%;
+  display: flex;
+  padding: 300%;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  overflow: visible;
+}
+.swiper-slide{
+  display: block;
+  background-color: green;
+  /* display: flex; */
+  width: 50%;
+  object-fit: cover;
+  overflow: visible;
+}
+.swiper-button-prev{
+  background-color: orange;
+  transform: translate(1000px, -220px);
+  /* transform: translateY(-150px); */
+  z-index: 30;
+  height: 2rem;
+  font-size: 0.2rem;
+}
+.swiper-button-prev::after{
+  position: absolute;
+  background-color: green;
+}
+.swiper-notification{
+  background-color: red;
+}
 
 /* ----------------------------------------------------------------------------ABOUT SECTION---------------------------------------------------------------------------- */
