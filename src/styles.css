@@ -64,12 +64,18 @@ section h3::before{
 .swiper{
   width: 100%;
   height: 100%;
-  background-color: red;
-  overflow: visible;
+  position: relative;
+  /* background-color: red; */
+  overflow: visible !important;
+  /* padding: 1rem 0; */
+}
+.mySwiper{
+  padding: 2rem 0;
+  
 }
 .swiper-wrapper{
   /* background-color: blue; */
-  width: 300%;
+  /* width: 300%; */
   display: flex;
   padding: 300%;
   padding-top: 0;
@@ -79,26 +85,43 @@ section h3::before{
 }
 .swiper-slide{
   display: block;
-  background-color: green;
+  /* background-color: green; */
   /* display: flex; */
   width: 50%;
   object-fit: cover;
   overflow: visible;
+  /* --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  background-color: green; */
 }
 .swiper-button-prev{
-  background-color: orange;
-  transform: translate(1000px, -220px);
-  /* transform: translateY(-150px); */
-  z-index: 30;
-  height: 2rem;
-  font-size: 0.2rem;
+  top: -1rem !important;
+  left: 95% !important;
 }
-.swiper-button-prev::after{
-  position: absolute;
-  background-color: green;
+.swiper-button-next{
+  top: -1rem !important;
+  left: 100% !important;
+}
+.swiper-button-prev:after, .swiper-button-next:after{
+  /* position: absolute; */
+  color: rgb(249,215,101);
+  overflow: visible;
+  font-size: 1.5rem !important;
+  /* right: 50% !important; */
+}
+.swiper-button-prev::after img{
+  height: 0.7rem;
 }
 .swiper-notification{
   background-color: red;
 }
 
 /* ----------------------------------------------------------------------------ABOUT SECTION---------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------FOOTER SECTION------------------------------------------------------------------------------------ */
+footer{
+  line-height: 2rem;
+}
+footer h2{
+  @apply font-[900] text-lg
+}
