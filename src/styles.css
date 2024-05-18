@@ -128,14 +128,9 @@ section h3::before{
   @apply pt-4
 }
 .menu{
- @apply shadow-lg py-2 shadow-gray-300
+ @apply shadow-lg py-2 shadow-gray-300 px-4
 }
-.menu h2{
-  @apply px-4
-}
-.price{
-  @apply px-4
-}
+
 
 /* ----------------------------------------------------------------------------ABOUT SECTION---------------------------------------------------------------------------- */
 
