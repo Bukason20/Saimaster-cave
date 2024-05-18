@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,7 +11,7 @@ header{
   @apply py-6 px-6 md:px-12 min-h-[100vh]
 }
 section, footer{
-  @apply py-10 px-6 md:px-12 
+  @apply py-10 px-6 md:px-12
 }
 section h3{
   position: relative;
@@ -18,7 +20,7 @@ section h3{
   font-weight: 700;
 }
 section h1{
-  @apply text-xl md:text-3xl font-bold
+  @apply text-xl md:text-3xl font-bold overflow-hidden
 }
 
 section h3::before{
@@ -33,9 +35,12 @@ section h3::before{
   transform: translateY(-50%);
 }
 .card{
-  @apply text-center bg-[rgb(249,215,101)] shadow-md px-2 py-3 md:py-5 md:px-3  rounded text-[0.7rem] md:text-base
+  @apply text-center bg-[rgb(249,215,101)] shadow-md px-2 py-2 md:py-5 md:px-3  rounded text-[0.7rem] md:text-base w-full
 }
-.hero-content img{
+.card img{
+  @apply h-5 md:h-7 mx-auto mb-3
+}
+.pointing-finger{
   @apply h-10 absolute top-[9%] left-[-13.5%];
   
   animation: appear 1s ease-in-out forwards, click 1s ease 1.5s infinite;
@@ -117,6 +122,19 @@ section h3::before{
 }
 .swiper-notification{
   background-color: red;
+}
+
+.menus{
+  @apply pt-4
+}
+.menu{
+ @apply shadow-lg py-2 shadow-gray-300
+}
+.menu h2{
+  @apply px-4
+}
+.price{
+  @apply px-4
 }
 
 /* ----------------------------------------------------------------------------ABOUT SECTION---------------------------------------------------------------------------- */
